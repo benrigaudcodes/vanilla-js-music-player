@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="player">
+        <h2>Music Player</h2>
+        <div class="song-cover">
+            <img src="./assets/img/lost-it-to-trying.jpg" alt="cover" class="cover-shadow">
+            <img src="./assets/img/lost-it-to-trying.jpg" alt="cover" class="cover">
+        </div>
+        <div class="song-info">
+            <p class="name">Lost It To Trying</p>
+            <p class="artist">Son Lux</p>
+            <div class="nav mobile">
+                <button aria-label="next" href="#" class="prev btn-player">
+                    <i class="fas fa-backward"></i>
+                </button>
+                <button aria-label="Play/Pause" href="#" class="play-pause btn-player">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button aria-label="next" href="#" class="next btn-player">
+                    <i class="fas fa-forward"></i>
+                </button>
+            </div>
+            <div class="progress mobile">
+                <span class="start"></span>
+                <div class="progress-bar">
+                    <div class="now"></div>
+                </div>
+                <span class="end"></span>
+            </div>
+            <div class="tracklist">
+                <h3>Playlist</h3>
+                <div class="tracks">
+                    <button class="track active" songArtist="Son Lux" songName="Lost It To Trying"
+                        songCover="./assets/img/lost-it-to-trying.jpg" songPath="./assets/music/lost-it-to-trying.mp3"
+                        songId="1">Lost It
+                        To
+                        Trying <span>Son Lux</span></button>
+                    <button class="track" songArtist="The 1975" songName="Robbers" songCover="./assets/img/robbers.jpg"
+                        songPath="./assets/music/robbers.mp3" songId="2">Robbers<span>The 1975</span></button>
+                    <button class="track" songArtist="Modest Mouse" songName="Float On"
+                        songCover="./assets/img/float-on.jpg" songPath="./assets/music/float-on.mp3" songId="3">Float On
+                        <span>Modest Mouse</span></button>
+                    <button class="track" songArtist="Brandon Flowers" songName="I Can Change"
+                        songCover="./assets/img/i-can-change.jpg" songPath="./assets/music/i-can-change.mp3"
+                        songId="4">I
+                        Can Change <span>Brandon Flowers</span></button>
+                    <button class="track" songArtist="Q" songName="Take Me Where Your Heart Is"
+                        songCover="./assets/img/take-me-where-your-heart-is.jpg"
+                        songPath="./assets/music/take-me-where-your-heart-is.mp3" songId="5">Take Me Where
+                        Your Heart Is <span>Q</span></button>
+                    <button class="track" songArtist="Sam Smith" songName="Love Goes"
+                        songCover="./assets/img/love-goes.jpg" songPath="./assets/music/love-goes.mp3" songId="6">Love
+                        Goes
+                        <span>Sam Smith</span></button>
+                    <button class="track" songArtist="The Warning" songName="Kindness ft. Robyn"
+                        songCover="./assets/img/kindness.jpg" songPath="./assets/music/kindness.mp3" songId="7">Kindness
+                        ft.
+                        Robyn <span>The Warning</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="song" song-id="1">
+            <audio>
+                <source src="./assets/music/lost-it-to-trying.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div class="progress desktop">
+            <span class="start"></span>
+            <div class="progress-bar">
+                <div class="now"></div>
+            </div>
+            <span class="end"></span>
+        </div>
+        <div class="nav desktop">
+            <button aria-label="next" href="#" class="prev btn-player">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button aria-label="Play/Pause" href="#" class="play-pause btn-player">
+                <i class="fas fa-play"></i>
+            </button>
+            <button aria-label="next" href="#" class="next btn-player">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>
+    <p>made by <a href="https://benrigaud.com" target="_blank">benrigaud</a></p>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
